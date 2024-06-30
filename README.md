@@ -60,9 +60,17 @@ mkdir -p $(pwd)/.analog
 
 * Analog docker container'ı çalıştıralım. 🐅
 * Önemli: Moniker'i değiştirmeyi unutmayın. (Moniker, senin Telemetry üzerinde görünecek ismin olacak. Daha sonra form doldururken bu bilgileri ekleyeceğiz.) (Parantezleri uçur 😁) 
-
+----------------------------------------------------
+* Eğerkine daha önceden çalıştırdı iseniz key aldı iseniz sezon key unutun. aşağıdakini girmeden ( konu yukleyıp eşleşemesi için bekleyenler için ) unutmayın bu kısım daha once kurmuş olanlar için yani vali falan kurmamış olanalr için 
+```
+docker stop analog
+docker rm analog
+cd
+rm -rf .analog
+```
+------------------------------------
 ```console
-docker run -d -p 9947:9944 -p 30303:30303 -v $(pwd)/.analog:/.analog --name analog analoglabs/timechain --base-path /.analog --rpc-external --rpc-methods=Unsafe --unsafe-rpc-external --name adini-yaz --telemetry-url "wss://telemetry.analog.one/submit 0"
+docker run -d -p 9947:9944 -p 30303:30303 -v $(pwd)/.analog:/.analog --name analog analoglabs/timechain --base-path /.analog --rpc-external --rpc-methods=Unsafe --unsafe-rpc-external --name adini-yaz --telemetry-url "wss://telemetry.analog.one/submit 0" --sync warp
 ```
 
 
