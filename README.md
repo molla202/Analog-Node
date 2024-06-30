@@ -18,11 +18,10 @@
 
 ```console
 Hardware: 8 vCPUs, 16 GB Ram, 300 GB Disk
-Port: 9944
+Port: 9947
 Network: 500 MBps
 Ubuntu: Version 22.04
 
-"Benim Contabo Vps3'te çalışıyor. Yanında 5 tane daha node kurulu. Sync olduktan sonra sıkıntısız ilerliyor Analog."
 ```
 
 
@@ -58,7 +57,6 @@ docker pull analoglabs/timechain
 mkdir -p $(pwd)/.analog
 ```
 
-* Analog docker container'ı çalıştıralım. 🐅
 * Önemli: adini-yaz kısmına isminizi yazın telemetry adınız bu 
 ----------------------------------------------------
 * Eğerkine daha önceden çalıştırdı iseniz key aldı iseniz sezon key unutun. aşağıdakini girmeden ( konu yukleyıp eşleşemesi için bekleyenler için ) unutmayın bu kısım daha once kurmuş olanlar için yani vali falan kurmamış olanalr için ve evet port değiştirdim bilocan artık baska polka ile çakışmaması lazımdur.
@@ -98,7 +96,7 @@ echo '{"id":1,"jsonrpc":"2.0","method":"author_rotateKeys","params":[]}' | webso
 ```
 
 
-* Genellikle Node Sync olduktan sonra Moniker'iniz Telemetry üzerinde görünür. (Ben 4 gün bekledim ama ismim hiçbir türlü görünmedi. Neden? Sayfa içinde arama ile değil sıralama yapıp, isminizin baş harfinin olduğu bölgeye gelip, kontrol edin, Moniker'iniz ile bakışın 🐅) 
+* Telemetryde sınır var isminiz görünmeyebilir. 
 
 * [Telemetry](https://telemetry.analog.one/)
 
@@ -125,7 +123,7 @@ echo '{"id":1,"jsonrpc":"2.0","method":"author_rotateKeys","params":[]}' | webso
 <img width="1071" alt="Ekran Resmi 2024-06-30 10 03 47" src="https://github.com/kaplanbitcoin1/Analog-Node/assets/98455323/72228575-41e5-4ffa-9e73-b9108c0e5cd1">
 
 
-> Son olarak başvuru [Form'unu](https://l5d87lam6fy.typeform.com/to/kwlADm6U/) dolduralım. Seçilmemiz halinde bize mail gönderilecek. -Form doldururken referans soruluyor. İsteyen github profilimi ekleyebilir ya da o kısmı es geçebilir. 
+> Son olarak başvuru [Form'unu](https://l5d87lam6fy.typeform.com/to/kwlADm6U/) dolduralım. Seçilmemiz halinde bize mail gönderilecek. -Form doldururken referans soruluyor. İsteyen corenode yazabilir ( bu repoda gordukleri için benim adımı yazmamaları için değştirdim)
 
 
 > Sanırım başardık 🐅
@@ -155,3 +153,4 @@ docker stop analog
 ```
 
 > [Lorento](https://github.com/Lorento34/) katkılarından dolayı teşekkürler ✅
+> [Kaplan](https://github.com/kaplanbitcoin1/) katkılarından dolayı teşekkürler ✅
