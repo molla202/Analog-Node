@@ -61,7 +61,7 @@ mkdir -p $(pwd)/.analog
 * Analog docker container'ı çalıştıralım. 🐅
 * Önemli: Moniker'i değiştirmeyi unutmayın. (Moniker, senin Telemetry üzerinde görünecek ismin olacak. Daha sonra form doldururken bu bilgileri ekleyeceğiz.) (Parantezleri uçur 😁) 
 ----------------------------------------------------
-* Eğerkine daha önceden çalıştırdı iseniz key aldı iseniz sezon key unutun. aşağıdakini girmeden ( konu yukleyıp eşleşemesi için bekleyenler için ) unutmayın bu kısım daha once kurmuş olanlar için yani vali falan kurmamış olanalr için 
+* Eğerkine daha önceden çalıştırdı iseniz key aldı iseniz sezon key unutun. aşağıdakini girmeden ( konu yukleyıp eşleşemesi için bekleyenler için ) unutmayın bu kısım daha once kurmuş olanlar için yani vali falan kurmamış olanalr için ve evet port değiştirdim bilocan artık baska polka ile çakışmaması lazımdur.
 ```
 docker stop analog
 docker rm analog
