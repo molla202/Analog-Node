@@ -139,11 +139,15 @@ echo '{"id":1,"jsonrpc":"2.0","method":"author_rotateKeys","params":[]}' | webso
 * Logları kontrol etme
   
 ```console
-docker logs -f analog
+docker logs -f analog -n 100
 ```
 * Analog başlatma
 ```console
 docker start analog
+```
+* Analog restart
+```console
+docker restart analog
 ```
 * Analog durdurma
 ```console
