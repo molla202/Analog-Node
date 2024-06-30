@@ -62,7 +62,7 @@ mkdir -p $(pwd)/.analog
 * Önemli: Moniker'i değiştirmeyi unutmayın. (Moniker, senin Telemetry üzerinde görünecek ismin olacak. Daha sonra form doldururken bu bilgileri ekleyeceğiz.) (Parantezleri uçur 😁) 
 
 ```console
-docker run -d -p 9944:9944 -p 30303:30303 -v $(pwd)/.analog:/.analog --name analog analoglabs/timechain --base-path /.analog --rpc-external --rpc-methods=Unsafe --unsafe-rpc-external --name (senin-moniker-ismin)
+docker run -d -p 9947:9944 -p 30303:30303 -v $(pwd)/.analog:/.analog --name analog analoglabs/timechain --base-path /.analog --rpc-external --rpc-methods=Unsafe --unsafe-rpc-external --name adini-yaz --telemetry-url "wss://telemetry.analog.one/submit 0"
 ```
 
 
