@@ -154,3 +154,5 @@ docker stop analog
 
 > [Lorento](https://github.com/Lorento34/) katkılarından dolayı teşekkürler ✅
 > [Kaplan](https://github.com/kaplanbitcoin1/) katkılarından dolayı teşekkürler ✅
+
+BU REPO LORENTO VE KAPLAN TARAFINDAN HAZIRLANMIŞ KAPLAN TARAFINDAN YAYINLANMIŞTIR. BAZI DÜZELTMELERİ VE UFAK DOKUNUŞLARI İÇERİR.
