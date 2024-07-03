@@ -57,7 +57,6 @@ docker pull analoglabs/timechain
 mkdir -p $(pwd)/.analog
 ```
 
-* Önemli: adini-yaz kısmına isminizi yazın telemetry adınız bu 
 ----------------------------------------------------
 * Eğerkine daha önceden çalıştırdı iseniz key aldı iseniz sezon key unutun. aşağıdakini girmeden ( konu yukleyıp eşleşemesi için bekleyenler için ) unutmayın bu kısım daha once kurmuş olanlar için yani vali falan kurmamış olanalr için ve evet port değiştirdim bilocan artık baska polka ile çakışmaması lazımdur.
 ```
@@ -66,7 +65,7 @@ docker rm analog
 cd
 rm -rf .analog
 ```
-------------------------------------
+------------------------------------ * Önemli: adini-yaz kısmına isminizi yazın telemetry adınız bu 
 ```console
 docker run -d -p 9947:9944 -p 30303:30303 -v $(pwd)/.analog:/.analog --name analog analoglabs/timechain --base-path /.analog --rpc-external --rpc-methods=Unsafe --unsafe-rpc-external --rpc-cors=all --name adini-yaz --telemetry-url "wss://telemetry.analog.one/submit 0" --sync warp
 ```
